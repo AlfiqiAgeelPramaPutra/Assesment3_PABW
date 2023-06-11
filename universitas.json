@@ -1,0 +1,212 @@
+{
+  "universities": [
+    {
+      "id": 1,
+      "university_name": "Massachusetts Institute of Technology (MIT)",
+      "country": "United States",
+      "region": "North America",
+      "overall_rating": 5,
+      "international_ranking": 3
+    },
+    {
+      "id": 2,
+      "university_name": "Stanford University",
+      "country": "United States",
+      "region": "North America",
+      "overall_rating": 5,
+      "international_ranking": 7
+    },
+    {
+      "id": 3,
+      "university_name": "Harvard University",
+      "country": "United States",
+      "region": "North America",
+      "overall_rating": 5,
+      "international_ranking": 1
+    },
+    {
+      "id": 4,
+      "university_name": "California Institute of Technology (Caltech)",
+      "country": "United States",
+      "region": "North America",
+      "overall_rating": 5,
+      "international_ranking": 5
+    },
+    {
+      "id": 5,
+      "university_name": "University of Oxford",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "overall_rating": 5,
+      "international_ranking": 2
+    },
+    {
+      "id": 6,
+      "university_name": "University of Cambridge",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "overall_rating": 5,
+      "international_ranking": 4
+    },
+    {
+      "id": 7,
+      "university_name": "University of Chicago",
+      "country": "United States",
+      "region": "North America",
+      "overall_rating": 5,
+      "international_ranking": 6
+    },
+    {
+      "id": 8,
+      "university_name": "Princeton University",
+      "country": "United States",
+      "region": "North America",
+      "overall_rating": 5,
+      "international_ranking": 10
+    },
+    {
+      "id": 9,
+      "university_name": "Cornell University",
+      "country": "United States",
+      "region": "North America",
+      "overall_rating": 5,
+      "international_ranking": 8
+    },
+    {
+      "id": 10,
+      "university_name": "Yale University",
+      "country": "United States",
+      "region": "North America",
+      "overall_rating": 5,
+      "international_ranking": 9
+    },
+    {
+      "id": 11,
+      "university_name": "Telkom University",
+      "country": "Indonesia",
+      "region": "Asia",
+      "overall_rating": 4,
+      "international_ranking": 29
+    },
+    {
+      "id": 12,
+      "university_name": "University of Michigan",
+      "country": "United States",
+      "region": "North America",
+      "overall_rating": 4,
+      "international_ranking": 15
+    },
+    {
+      "id": 13,
+      "university_name": "Johns Hopkins University",
+      "country": "United States",
+      "region": "North America",
+      "overall_rating": 4,
+      "international_ranking": 13
+    },
+    {
+      "id": 14,
+      "university_name": "Swiss Federal Institute of Technology Zurich (ETH Zurich)",
+      "country": "Switzerland",
+      "region": "Europe",
+      "overall_rating": 4,
+      "international_ranking": 12
+    },
+    {
+      "id": 15,
+      "university_name": "University College London (UCL)",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "overall_rating": 4,
+      "international_ranking": 14
+    },
+    {
+      "id": 16,
+      "university_name": "Imperial College London",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "overall_rating": 4,
+      "international_ranking": 16
+    },
+    {
+      "id": 17,
+      "university_name": "University of Pennsylvania",
+      "country": "United States",
+      "region": "North America",
+      "overall_rating": 4,
+      "international_ranking": 17
+    },
+    {
+      "id": 18,
+      "university_name": "Duke University",
+      "country": "United States",
+      "region": "North America",
+      "overall_rating": 4,
+      "international_ranking": 18
+    },
+    {
+      "id": 19,
+      "university_name": "University of California, Berkeley (UCB)",
+      "country": "United States",
+      "region": "North America",
+      "overall_rating": 4,
+      "international_ranking": 19
+    },
+    {
+      "id": 20,
+      "university_name": "University of California, Los Angeles (UCLA)",
+      "country": "United States",
+      "region": "North America",
+      "overall_rating": 4,
+      "international_ranking": 20
+    },
+    {
+      "id": 21,
+      "university_name": "University of Indonesia",
+      "country": "Indonesia",
+      "region": "Asia",
+      "overall_rating": 4,
+      "international_ranking": 26
+    },
+    {
+      "id": 22,
+      "university_name": "Gadjah Mada University",
+      "country": "Indonesia",
+      "region": "Asia",
+      "overall_rating": 4,
+      "international_ranking": 31
+    },
+    {
+      "id": 23,
+      "university_name": "Bandung Institute of Technology",
+      "country": "Indonesia",
+      "region": "Asia",
+      "overall_rating": 4,
+      "international_ranking": 35
+    },
+    {
+      "id": 24,
+      "university_name": "Airlangga University",
+      "country": "Indonesia",
+      "region": "Asia",
+      "overall_rating": 4,
+      "international_ranking": 103
+    },
+    {
+      "id": 25,
+      "university_name": "Bogor Agricultural University",
+      "country": "Indonesia",
+      "region": "Asia",
+      "overall_rating": 4,
+      "international_ranking": 52
+    },
+    {
+      "id": "26",
+      "university_name": "Padjajaran University",
+      "country": "Indonesia",
+      "region": "Asia",
+      "overall_rating": "5",
+      "international_ranking": "38"
+    }
+  ]
+}

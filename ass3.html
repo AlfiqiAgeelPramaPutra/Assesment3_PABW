@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .error {
+      color: red;
+    }
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .form-container h2 {
+      margin-bottom: 20px;
+    }
+    .form-container label {
+      font-weight: bold;
+    }
+    .form-container button[type="submit"] {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div id="accordion">
+          <h3>Section 1</h3>
+          <div>
+            <p>
+              Section 1
+            </p>
+          </div>
+          <h3>Section 2</h3>
+          <div>
+            <p>
+              Section 2
+            </p>
+          </div>
+          <h3>Section 3</h3>
+          <div>
+            <p>
+              Section 3
+            </p>
+            <ul>
+              <li>List item one</li>
+              <li>List item two</li>
+              <li>List item three</li>
+            </ul>
+          </div>
+          <h3>Section 4</h3>
+          <div>
+            <p>
+              Section 4
+            </p>
+            <p>
+              Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div id="tabs">
+          <ul>
+            <li><a href="#tabs-1">Datatable</a></li>
+            <li><a href="#tabs-2">Tambah Data</a></li>
+            <li><a href="#tabs-3">Update Data</a></li>
+          </ul>
+          <div id="tabs-1">
+            <table border="1" id="tabel">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>University Name</th>
+                  <th>Country</th>
+                  <th>Region</th>
+                  <th>Overall Rating</th>
+                  <th>International Rangking</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div id="tabs-2">
+            <div class="form-container">
+              <h2>Tambah Data</h2>
+              <form id="form-tambah">
+                <div class="mb-3">
+                  <label for="id" class="form-label">Id:</label>
+                  <input type="text" id="id" name="id" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="university_name" class="form-label">University Name:</label>
+                  <input type="text" id="university_name" name="university_name" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="country" class="form-label">Country:</label>
+                  <input type="text" id="country" name="country" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="region" class="form-label">Region:</label>
+                  <input type="text" id="region" name="region" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="overall_rating" class="form-label">Overall Rating:</label>
+                  <input type="text" id="overall_rating" name="overall_rating" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="international_ranking" class="form-label">International Ranking:</label>
+                  <input type="text" id="international_ranking" name="international_ranking" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Tambah</button>
+              </form>
+            </div>
+          </div>
+          <div id="tabs-3">
+            <div class="form-container">
+              <h2>Update Data</h2>
+              <form id="form-update">
+                <div class="mb-3">
+                  <label for="id-update" class="form-label">Id:</label>
+                  <input type="text" id="id-update" name="id" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="univ-update" class="form-label">University Name:</label>
+                  <input type="text" id="univ-update" name="university_name" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="country-update" class="form-label">Country:</label>
+                  <input type="text" id="country-update" name="country" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="region-update" class="form-label">Region:</label>
+                  <input type="text" id="region-update" name="region" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="overall_rating-update" class="form-label">Overall Rating:</label>
+                  <input type="text" id="overall_rating-update" name="overall_rating" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="international_ranking-update" class="form-label">International Ranking:</label>
+                  <input type="text" id="international_ranking-update" name="international_ranking" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Update</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+  <script>
+
+    $(document).ready(function () {
+      $("#accordion").accordion();
+      $("#tabs").tabs();
+      $(".widget input[type=submit], .widget a, .widget button").button();
+
+      $.ajax({
+        url: "http://localhost:3000/universities",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+          console.log(data);
+          // Proses respons dari panggilan ajax
+          $('#tabel').dataTable({
+            "data": data,
+            "columns": [
+              { "data": "id" },
+              { "data": "university_name" },
+              { "data": "country" },
+              { "data": "region" },
+              { "data": "overall_rating" },
+              { "data": "international_ranking" },
+              {
+                // Tambahkan tombol "Update" dan "Delete" pada kolom terakhir
+                "data": null,
+                "render": function (data, type, row) {
+                  return "<div style='display: flex; justify-content: space-between;'><button class='update-button btn btn-primary'>Update</button><button class='delete-button btn btn-danger'>Delete</button></div>";
+                }
+              }
+
+            ],
+            serverSide: false
+          });
+
+          // Tangani klik tombol "Update"
+          $('#tabel').on('click', '.update-button', function () {
+            var data = $('#tabel').DataTable().row($(this).parents('tr')).data();
+            var id = data.id;
+            var university_name = data.university_name;
+            var country = data.country;
+            var region = data.region;
+            var overall_rating = data.overall_rating;
+            var international_ranking = data.international_ranking;
+            // Alihkan ke formulir update dengan ID yang dipilih
+            $("#tabs").tabs("option", "active", 2);
+            $("#id-update").val(id);
+            $("#univ-update").val(university_name);
+            $("#country-update").val(country);
+            $("#region-update").val(region);
+            $("#overall_rating-update").val(overall_rating);
+            $("#international_ranking-update").val(international_ranking);
+          });
+
+          // Tangani klik tombol "Delete"
+          $('#tabel').on('click', '.delete-button', function () {
+            var data = $('#tabel').DataTable().row($(this).parents('tr')).data();
+            var id = data.id;
+            var university_name = data.university_name;
+            var country = data.country;
+            var region = data.region;
+            var overall_rating = data.overall_rating;
+            var international_ranking = data.international_ranking;
+
+            // Konfirmasi penghapusan data
+            if (confirm("Apakah Anda yakin ingin menghapus data ini?")) {
+              // Proses penghapusan data
+              $.ajax({
+                url: "http://localhost:3000/universities/" + id,
+                type: "DELETE",
+                success: function (response) {
+                  // Tambahkan kode untuk menampilkan pesan atau melakukan aksi lain setelah penghapusan berhasil
+                  console.log("Data berhasil dihapus");
+                  alert("Data berhasil dihapus");
+                },
+                error: function (xhr, status, error) {
+                  // Tambahkan kode untuk menampilkan pesan atau melakukan aksi lain setelah terjadi kesalahan saat penghapusan
+                  console.log("Terjadi kesalahan saat menghapus data");
+                  alert("Data gagal dihapus");
+                }
+              });
+            }
+          });
+        },
+        error: function (xhr, status, error) {
+          // Tambahkan kode untuk menampilkan pesan atau melakukan aksi lain jika terjadi kesalahan saat memuat data
+          console.log("Terjadi kesalahan saat memuat data");
+          alert("Data gagal dimuat");
+        }
+      });
+
+      // Validasi form tambah data
+      $("#form-tambah").validate({
+        rules: {
+          id: {
+            required: true,
+            digits: true
+          },
+          university_name: "required",
+          country: "required",
+          region: "required",
+          overall_rating: {
+            required: true,
+            number: true
+          },
+          international_ranking: {
+            required: true,
+            number: true
+          }
+        },
+        messages: {
+          id: {
+            required: "Id harus diisi",
+            digits: "Id harus berupa angka"
+          },
+          university_name: "Nama universitas harus diisi",
+          country: "Negara harus diisi",
+          region: "Region harus diisi",
+          overall_rating: {
+            required: "Overall Rating harus diisi",
+            number: "Overall Rating harus berupa angka"
+          },
+          international_ranking: {
+            required: "International Ranking harus diisi",
+            number: "International Ranking harus berupa angka"
+          }
+        },
+        submitHandler: function (form) {
+          // Proses tambah data
+          var id = $("#id").val();
+          var university_name = $("#university_name").val();
+          var country = $("#country").val();
+          var region = $("#region").val();
+          var overall_rating = $("#overall_rating").val();
+          var international_ranking = $("#international_ranking").val();
+
+          $.ajax({
+            url: "http://localhost:3000/universities",
+            type: "POST",
+            dataType: "json",
+            data: {
+              id: id,
+              university_name: university_name,
+              country: country,
+              region: region,
+              overall_rating: overall_rating,
+              international_ranking: international_ranking
+            },
+            success: function (response) {
+              // Tambahkan kode untuk menampilkan pesan atau melakukan aksi lain setelah penambahan data berhasil
+              console.log("Data berhasil ditambahkan");
+              alert("Data berhasil ditambahkan");
+              form.reset();
+            },
+            error: function (xhr, status, error) {
+              // Tambahkan kode untuk menampilkan pesan atau melakukan aksi lain setelah terjadi kesalahan saat penambahan data
+              console.log("Terjadi kesalahan saat menambahkan data");
+              alert("Data gagal ditambahkan");
+            }
+          });
+        }
+      });
+
+      // Validasi form update data
+      $("#form-update").validate({
+        rules: {
+          id: {
+            required: true,
+            digits: true
+          },
+          university_name: "required",
+          country: "required",
+          region: "required",
+          overall_rating: {
+            required: true,
+            number: true
+          },
+          international_ranking: {
+            required: true,
+            number: true
+          }
+        },
+        messages: {
+          id: {
+            required: "Id harus diisi",
+            digits: "Id harus berupa angka"
+          },
+          university_name: "Nama universitas harus diisi",
+          country: "Negara harus diisi",
+          region: "Region harus diisi",
+          overall_rating: {
+            required: "Overall Rating harus diisi",
+            number: "Overall Rating harus berupa angka"
+          },
+          international_ranking: {
+            required: "International Ranking harus diisi",
+            number: "International Ranking harus berupa angka"
+          }
+        },
+        submitHandler: function (form) {
+          // Proses update data
+          var id = $("#id-update").val();
+          var university_name = $("#univ-update").val();
+          var country = $("#country-update").val();
+          var region = $("#region-update").val();
+          var overall_rating = $("#overall_rating-update").val();
+          var international_ranking = $("#international_ranking-update").val();
+
+          $.ajax({
+            url: "http://localhost:3000/universities/" + id,
+            type: "PUT",
+            dataType: "json",
+            data: {
+              id: id,
+              university_name: university_name,
+              country: country,
+              region: region,
+              overall_rating: overall_rating,
+              international_ranking: international_ranking
+            },
+            success: function (response) {
+              // Tambahkan kode untuk menampilkan pesan atau melakukan aksi lain setelah update data berhasil
+              console.log("Data berhasil diperbarui");
+              alert("Data berhasil diperbarui");
+            },
+            error: function (xhr, status, error) {
+              // Tambahkan kode untuk menampilkan pesan atau melakukan aksi lain setelah terjadi kesalahan saat update data
+              console.log("Terjadi kesalahan saat memperbarui data");
+              alert("Data gagal diperbarui");
+            }
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
